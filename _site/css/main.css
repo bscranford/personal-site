@@ -18,7 +18,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 18px/1.5 "Space Mono", monospace;
+  font: 400 18px/1.5 Space Mono, monospace;
   color: #111;
   background-color: #fefefe;
   -webkit-text-size-adjust: 100%;
@@ -460,7 +460,7 @@ pre {
 
 body {
   color: midnightblue;
-  font-family: "Space Mono", monospace;
+  font-family: Space Mono, monospace;
   font-size: 18px;
   font-weight: 400;
   background-color: #fefefe;
@@ -498,7 +498,7 @@ footer {
   background: linear-gradient(45deg, midnightblue, teal); }
   #hero h1 {
     line-height: 1;
-    font-family: "Knewave", Arial, sans-serif;
+    font-family: Knewave, Arial, sans-serif;
     font-weight: 700;
     font-size: 14vw;
     letter-spacing: 15px;
