@@ -1,0 +1,125 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Variables
+$base-font-family: 'Space Mono', monospace;
+$hero-font-family: 'Knewave', Arial, sans-serif;
+$base-font-size: 18px;
+$base-font-weight: 400;
+$base-font-color: midnightblue;
+$base-line-height: 1.5;
+
+$spacing-unit: 10px;
+
+$background-color: #fefefe;
+
+$content-max-width: 80vw;
+$on-mobile: 700px;
+
+// Import partials from the `minima` theme.
+@import "minima";
+
+// Base Styles
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  background-color: $background-color;
+  line-height: $base-line-height;
+}
+
+// Structure
+.wrapper { 
+  max-width: $content-max-width;
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 20px;
+    color: midnightblue;
+    line-height: 1.2;
+  }
+}
+.content-wrapper {
+  max-width: 40vw;
+  min-height: 40vh;
+  margin: 4% auto 0 auto;
+}
+footer {
+  text-align: center;
+  height: 100px;
+  width: 40vw;
+  border-top: 4px solid teal;
+  margin: 50px auto 30px auto;
+  p {
+    margin-top: 20px;
+  }
+}
+
+// Hero Section
+#hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, midnightblue, teal);
+  h1 {
+    line-height: 1;
+    font-family: $hero-font-family;
+    font-weight: 700;
+    font-size: 14vw;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: transparent;
+    text-align: center;
+    background: url(../images/background.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    width: 100vw;
+  }
+}
+
+// Elements
+a {
+  color: $base-font-color;
+  box-shadow: inset 0 -4px 0 teal;
+  transition: background 0.5s cubic-bezier(.33,.66,.66,1);
+  &:hover {
+    background-color: teal;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $base-font-color;
+  }
+}
+
+// Pages
+.page-heading { text-align: center; }
+
+// Posts
+.post-list {
+}
+.post-meta {
+}
+.post-link {
+}
+
+// Media Queries
+@media screen and (max-width: $on-mobile) {
+  .content-wrapper {
+    max-width: 80vw;
+    margin: 6% auto 0 auto;
+  }
+  footer {
+    width: 80vw;
+    margin-bottom: 60px;
+  }
+  #hero > h1 {
+    font-size: 30vw;
+  }
+}
