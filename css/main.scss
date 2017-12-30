@@ -3,6 +3,16 @@
 ---
 @charset "utf-8";
 
+@font-face {
+  font-family: 'Space Mono';
+  src: url(../fonts/SpaceMono-Regular.ttf);
+}
+@font-face {
+  font-family: 'Knewave';
+  src: url(../fonts/Knewave-Regular.ttf);
+  font-weight: 700;
+}
+
 // Variables
 $base-font-family: 'Space Mono', monospace;
 $hero-font-family: 'Knewave', Arial, sans-serif;
