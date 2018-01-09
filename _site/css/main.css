@@ -518,9 +518,8 @@ a {
   transition: background 0.5s cubic-bezier(0.33, 0.66, 0.66, 1); }
   a:hover {
     background-color: teal;
-    text-decoration: none; }
-  a:visited {
-    color: midnightblue; }
+    text-decoration: none;
+    color: #fefefe; }
 
 .page-heading {
   text-align: center; }
