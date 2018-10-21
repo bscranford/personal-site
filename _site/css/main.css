@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   src: url(../fonts/SpaceMono-Regular.ttf); }
 @font-face {
-  font-family: 'Knewave';
+  font-family: "Knewave";
   src: url(../fonts/Knewave-Regular.ttf);
   font-weight: 700; }
 /**
@@ -535,5 +535,5 @@ a {
 
   #hero > h1 {
     font-size: 30vw;
-    color: teal;
+    color: #fefefe;
     background: none; } }

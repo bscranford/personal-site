@@ -1,37 +1,30 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
+@charset "utf-8";
 @font-face {
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   src: url(../fonts/SpaceMono-Regular.ttf);
 }
 @font-face {
-  font-family: 'Knewave';
+  font-family: "Knewave";
   src: url(../fonts/Knewave-Regular.ttf);
   font-weight: 700;
-}
-
-// Variables
+} // Variables
 $base-font-family: Space Mono, monospace;
 $hero-font-family: Knewave, Arial, sans-serif;
 $base-font-size: 18px;
 $base-font-weight: 400;
 $base-font-color: midnightblue;
 $base-line-height: 1.5;
-
 $spacing-unit: 10px;
-
 $background-color: #fefefe;
-
 $content-max-width: 80vw;
 $on-mobile: 700px;
 
 // Import partials from the `minima` theme.
-@import "minima";
-
-// Base Styles
+@import "minima"; // Base Styles
 body {
   color: $base-font-color;
   font-family: $base-font-family;
@@ -40,9 +33,8 @@ body {
   background-color: $background-color;
   line-height: $base-line-height;
 }
-
 // Structure
-.wrapper { 
+.wrapper {
   max-width: $content-max-width;
   h1 {
     text-align: center;
@@ -66,9 +58,7 @@ footer {
   p {
     margin-top: 20px;
   }
-}
-
-// Hero Section
+} // Hero Section
 #hero {
   width: 100vw;
   height: 100vh;
@@ -92,32 +82,26 @@ footer {
     -webkit-background-clip: text;
     width: 100vw;
   }
-}
-
-// Elements
+} // Elements
 a {
   color: $base-font-color;
   box-shadow: inset 0 -4px 0 teal;
-  transition: background 0.5s cubic-bezier(.33,.66,.66,1);
+  transition: background 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
   &:hover {
     background-color: teal;
     text-decoration: none;
     color: #fefefe;
   }
-}
-
-// Pages
-.page-heading { text-align: center; }
-
-// Posts
+} // Pages
+.page-heading {
+  text-align: center;
+} // Posts
 .post-list {
 }
 .post-meta {
 }
 .post-link {
-}
-
-// Media Queries
+} // Media Queries
 @media screen and (max-width: $on-mobile) {
   .content-wrapper {
     max-width: 80vw;
@@ -129,7 +113,7 @@ a {
   }
   #hero > h1 {
     font-size: 30vw;
-    color: teal;
+    color: #fefefe;
     background: none;
   }
 }
