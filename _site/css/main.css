@@ -492,9 +492,17 @@ footer {
 #hero {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  background: -webkit-linear-gradient(45deg, midnightblue, teal);
+  background: -o-linear-gradient(45deg, midnightblue, teal);
   background: linear-gradient(45deg, midnightblue, teal); }
   #hero h1 {
     line-height: 1;
@@ -514,7 +522,10 @@ footer {
 
 a {
   color: midnightblue;
+  -webkit-box-shadow: inset 0 -4px 0 teal;
   box-shadow: inset 0 -4px 0 teal;
+  -webkit-transition: background 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
+  -o-transition: background 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
   transition: background 0.5s cubic-bezier(0.33, 0.66, 0.66, 1); }
   a:hover {
     background-color: teal;
@@ -524,12 +535,16 @@ a {
 .labs-wrapper {
   max-width: 80vw;
   min-height: 40vh;
-  margin: 4% auto 8% auto;
+  margin: 4% auto 4% auto;
   text-align: center; }
   .labs-wrapper table {
     margin: 30px auto 0 auto;
     width: 100%;
-    border-collapse: collapse; }
+    border-collapse: collapse;
+    text-align: center; }
+    .labs-wrapper table thead {
+      color: inherit;
+      text-align: center; }
     .labs-wrapper table tbody tr:nth-of-type(1) {
       background-color: #aaa; }
     .labs-wrapper table tbody tr:nth-of-type(2),
@@ -549,20 +564,30 @@ a {
       border-collapse: collapse;
       padding: 2px; }
     .labs-wrapper table tbody .team-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -ms-flex-pack: distribute;
       justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       padding: 0;
       margin: 0;
       width: 100%;
       height: 100%; }
       .labs-wrapper table tbody .team-row img {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
+        -ms-grid-column-align: center;
         justify-self: center;
         height: 25px;
         width: 25px;
+        -ms-flex-preferred-size: auto;
         flex-basis: auto; }
       .labs-wrapper table tbody .team-row p {
+        -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
         margin-bottom: 0; }
 

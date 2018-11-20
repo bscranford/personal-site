@@ -37,19 +37,19 @@ layout: labs
       data.standings[0].table.map(row => {
         let team = document.createElement("tr");
         team.innerHTML = `<tr>
-                                    <td>${row.position}</td>
-                                    <td><div class="team-row"><img src=${
-                                      row.team.crestUrl
-                                    }><p>${row.team.name}</p></div></td>
-                                    <td>${row.playedGames}</td>
-                                    <td>${row.won}</td>
-                                    <td>${row.lost}</td>
-                                    <td>${row.draw}</td>
-                                    <td>${row.goalsFor}</td>
-                                    <td>${row.goalsAgainst}</td>
-                                    <td>${row.goalDifference}</td>
-                                    <td>${row.points}</td>
-                                  </tr>`;
+                              <td>${row.position}</td>
+                              <td><div class="team-row"><img src=${
+                                row.team.crestUrl
+                              }><p>${row.team.name}</p></div></td>
+                              <td>${row.playedGames}</td>
+                              <td>${row.won}</td>
+                              <td>${row.lost}</td>
+                              <td>${row.draw}</td>
+                              <td>${row.goalsFor}</td>
+                              <td>${row.goalsAgainst}</td>
+                              <td>${row.goalDifference}</td>
+                              <td>${row.points}</td>
+                            </tr>`;
         document.querySelector(".table-body").appendChild(team);
       });
     });
