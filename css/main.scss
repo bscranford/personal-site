@@ -24,8 +24,6 @@ $background-color: #fefefe;
 $content-max-width: 80vw;
 $on-mobile: 700px;
 
-// Import partials from the `minima` theme.
-@import "minima"; // Base Styles
 body {
   color: $base-font-color;
   font-family: $base-font-family;
@@ -33,11 +31,14 @@ body {
   font-weight: $base-font-weight;
   background-color: $background-color;
   line-height: $base-line-height;
+  margin: 0;
+  padding: 0;
 }
 
 // Structure
 .wrapper {
   max-width: $content-max-width;
+  margin: 0 auto;
   h1 {
     text-align: center;
     font-size: 42px;
@@ -102,17 +103,21 @@ a {
   -webkit-transition: background 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
   -o-transition: background 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
   transition: background 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
+  text-decoration: none;
   &:hover {
     background-color: teal;
     text-decoration: none;
     color: #fefefe;
+  }
+  &:visited {
+    color: $base-font-color;
   }
 }
 // Labs
 .labs-wrapper {
   max-width: 80vw;
   min-height: 40vh;
-  margin: 4% auto 4% auto;
+  margin: 4% auto 8% auto;
   text-align: center;
   table {
     margin: 30px auto 0 auto;
@@ -175,7 +180,7 @@ a {
         p {
           -ms-flex-preferred-size: 80%;
           flex-basis: 80%;
-          margin-bottom: 0;
+          margin: 0;
         }
       }
     }

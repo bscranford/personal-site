@@ -19,8 +19,7 @@ description: The personal website of Brad Cranford.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bradcranford.com" # the base hostname & protocol for your site
 twitter_username: brad_cranford
-github_username:  bscranford
+github_username: bscranford
 
 # Build settings
 markdown: kramdown
-theme: minima
