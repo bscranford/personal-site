@@ -521,6 +521,51 @@ a {
     text-decoration: none;
     color: #fefefe; }
 
+.labs-wrapper {
+  max-width: 80vw;
+  min-height: 40vh;
+  margin: 4% auto 8% auto;
+  text-align: center; }
+  .labs-wrapper table {
+    margin: 30px auto 0 auto;
+    width: 100%;
+    border-collapse: collapse; }
+    .labs-wrapper table tbody tr:nth-of-type(1) {
+      background-color: #aaa; }
+    .labs-wrapper table tbody tr:nth-of-type(2),
+    .labs-wrapper table tbody tr:nth-of-type(3),
+    .labs-wrapper table tbody tr:nth-of-type(4) {
+      background-color: #ccc; }
+    .labs-wrapper table tbody tr:nth-of-type(5) {
+      background-color: #eee; }
+    .labs-wrapper table tbody tr:nth-of-type(17) {
+      border-bottom: 3px solid #970000; }
+    .labs-wrapper table tbody tr:nth-of-type(18),
+    .labs-wrapper table tbody tr:nth-of-type(19),
+    .labs-wrapper table tbody tr:nth-of-type(20) {
+      background-color: #aaa; }
+    .labs-wrapper table tbody td {
+      border: 1px solid teal;
+      border-collapse: collapse;
+      padding: 2px; }
+    .labs-wrapper table tbody .team-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%; }
+      .labs-wrapper table tbody .team-row img {
+        align-self: center;
+        justify-self: center;
+        height: 25px;
+        width: 25px;
+        flex-basis: auto; }
+      .labs-wrapper table tbody .team-row p {
+        flex-basis: 80%;
+        margin-bottom: 0; }
+
 .page-heading {
   text-align: center; }
 
