@@ -50,9 +50,14 @@
         let team = document.createElement("tr");
         team.innerHTML = `<tr>
                               <td>${row.position}</td>
-                              <td><div class="team-row"><img src=${
-                                row.team.crestUrl
-                              }><p>${row.team.name}</p></div></td>
+                              <td>
+                                <div class="team-row">
+                                  <img src=${row.team.crestUrl}>
+                                  <p><a href="team?id=${row.team.id}">${
+          row.team.name
+        }</a></p>
+                                </div>
+                              </td>
                               <td>${row.playedGames}</td>
                               <td>${row.won}</td>
                               <td>${row.lost}</td>

@@ -81,7 +81,7 @@ a {
   a:hover {
     background-color: teal;
     text-decoration: none;
-    color: #fefefe; }
+    color: #fefefe !important; }
   a:visited {
     color: midnightblue; }
 
@@ -90,6 +90,16 @@ a {
   min-height: 40vh;
   margin: 4% auto 8% auto;
   text-align: center; }
+  .labs-wrapper #team_wrapper {
+    display: flex;
+    justify-content: space-around; }
+    .labs-wrapper #team_wrapper div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .labs-wrapper #team_wrapper #team_info {
+      flex-direction: column;
+      justify-content: flex-start; }
   .labs-wrapper table {
     margin: 30px auto 0 auto;
     width: 100%;
@@ -143,6 +153,11 @@ a {
         -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
         margin: 0; }
+      .labs-wrapper table tbody .team-row a {
+        box-shadow: none; }
+        .labs-wrapper table tbody .team-row a:hover {
+          background-color: transparent;
+          color: teal !important; }
 
 .page-heading {
   text-align: center; }
