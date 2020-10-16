@@ -12,6 +12,7 @@
         @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 
         html {
+            -webkit-box-sizing: border-box;
             box-sizing: border-box;
             font-size: 16px;
         }
@@ -19,6 +20,7 @@
         *,
         *:before,
         *:after {
+            -webkit-box-sizing: inherit;
             box-sizing: inherit;
         }
 
@@ -55,7 +57,11 @@
         }
 
         .container {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             height: 100vh;
             margin: auto;
@@ -148,11 +154,15 @@
             margin-top: 40px;
             padding: 8px 16px;
             text-transform: uppercase;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
         }
 
         .start-timer:hover,
         .clue-button:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
             transform: scale(1.1);
         }
 
@@ -182,11 +192,15 @@
             cursor: pointer;
             height: 24px;
             margin: 20px 10px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
             width: 24px;
         }
 
         .scoreboard:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
             transform: scale(1.1);
         }
 
@@ -272,6 +286,8 @@
                                         <p style="font-size: 18px;">Click 'Next Clue!', and double the value of the next question!</p>
                                         <img src="daily_double.gif" alt="Daily Double" style="width: 70%; margin: 0 auto;">
                                     `;
+                        value.innerHTML = '';
+                        answer.innerHTML = '';
                     } else {
                         clue.innerHTML = data[0].question;
                         if (data[0].value == null) {
